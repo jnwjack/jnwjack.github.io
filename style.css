@@ -8,6 +8,18 @@ body {
   width: 100%;
   overflow-y: hidden;
 }
+a {
+  /* Remove underline */
+  text-decoration: none;
+}
+a img {
+  height: 24px;
+}
+/* Links to Github, etc. */
+.social-links > a {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
 /* Navigation bar */
 nav {
   font-size: 1rem;
@@ -43,20 +55,28 @@ article {
   flex-direction: row;
   justify-content: center;
 }
-section {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 4rem;
   max-width: 80%;
 }
-section > *:not(:last-child) {
-  margin-bottom: 1rem;
+.content > *:not(:last-child) {
+  margin-bottom: 2rem;
 }
 p {
   margin: 0;
   max-width: 15rem;
 }
+/* Embedded resume */
+iframe {
+  border: 0;
+}
+/* object, iframe {
+  width: 500px;
+  height: 678px;
+} */
 main {
   /* Hide horizontal scroll bar */
   height: calc(100vh + 17px);
@@ -76,16 +96,17 @@ main {
 }
 /* Content panels */
 #about {
-  background-color: aquamarine;
+  background-color: #2A322D;
+  color: #ffffff;
 }
 #projects {
-  background-color: brown;
+  background-color: #B1865D;
 }
 #resume {
-  background-color: coral;
+  background-color: #BEB997;
 }
 #contact {
-  background-color: darkolivegreen;
+  background-color: #BFB68D;
 }
 .circle {
   background-color: darkred;
