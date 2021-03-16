@@ -8,5 +8,5 @@ const iO = new IntersectionObserver(entries => entries.forEach(entry => {
   threshold: 0.5
 });
 
-sections = Array.from(document.querySelectorAll('section'))
-window.addEventListener('DOMContentLoaded', () => sections.map(a => iO.observe(a)));
+panels = Array.from(document.querySelectorAll('article'))
+window.addEventListener('DOMContentLoaded', () => panels.map(a => iO.observe(a)));``
