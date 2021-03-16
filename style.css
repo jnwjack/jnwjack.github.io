@@ -8,7 +8,8 @@ body {
   overflow-y: hidden;
 }
 nav {
-  height: 4rem;
+  height: auto;
+  bottom: 0;
   width: 100%;
   font-size: 2rem;
   line-height: 4rem;
@@ -17,11 +18,14 @@ nav {
   align-items: center;
   justify-content: flex-start;
   position: fixed;
-  background-color: blueviolet;
+  background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(172,172,172,1) 100%);
+  opacity: 0.6;
 }
 nav > a {
   margin-right: 2rem;
   margin-left: 2rem;
+  color: black;
+  opacity: 1.0;
 }
 section {
   height: 100%;
