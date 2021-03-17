@@ -54,13 +54,24 @@ article {
   display: flex;
   flex-direction: row;
   justify-content: center;
+
+  overflow-y: scroll;
 }
 .content {
+  padding-top: 4rem;
+  padding-bottom: calc(4rem + 17px);
+  width: 80%;
+}
+#about > .content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 4rem;
-  max-width: 80%;
+}
+#projects > .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .content > *:not(:last-child) {
   margin-bottom: 2rem;
@@ -116,6 +127,28 @@ main {
 }
 .focus {
   background-color: ghostwhite;
+}
+/* Project gallery */
+.card {
+  height: 300px;
+  width: 400px;
+  /* margin-right: 2rem; */
+}
+.card > .background {
+  height: 100%;
+  width: 100%;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+#filebuy > .background {
+  background-image: url("img/filebuy.png");
+}
+#bookingengine > .background {
+  background-image: url("img/bookingengine.png");
+}
+#portfolio > .background {
+  background-image: url("img/portfolio.png");
 }
 /* Desktop styles */
 @media only screen and (min-width: 769px) {
