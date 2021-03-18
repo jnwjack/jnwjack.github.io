@@ -5,7 +5,7 @@ const iO = new IntersectionObserver(entries => entries.forEach(entry => {
   navEl.classList.toggle('focus', entry.isIntersecting && entry.intersectionRatio > 0.5)
 }), {
   root: document.querySelector(`main`),
-  threshold: 0.5
+  threshold: 0.7
 });
 
 panels = Array.from(document.querySelectorAll('article'))
