@@ -224,19 +224,25 @@ main {
   font-size: 24px;
   font-weight: 800;
   padding: 5px 15px 5px 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   border: 2px solid #8312ed;
   color: #8312ed;
   background-color: ghostwhite;
+}
+/* Disable button that embeds booking widget into DOM on mobile */
+.card div.card-link {
+  display: none;
 }
 .card:hover > .background {
   filter: blur(5px);
 }
 .card:hover > .text {
-  top: 20%;
+  top: 15%;
   opacity: 1;
 }
 .card:hover > .card-link-wrapper {
-  bottom: 20%;
+  bottom: 15%;
   opacity: 1;
 }
 #filebuy > .background {
@@ -280,5 +286,9 @@ main {
     height: 4rem;
     width: 4rem;
     text-align: center;
+  }
+  /* Enable button that inserts widget into DOM on desktop */
+  .card div.card-link {
+    display: block;
   }
 }
