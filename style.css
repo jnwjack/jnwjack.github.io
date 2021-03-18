@@ -70,16 +70,19 @@ article {
   padding-bottom: calc(4rem + 17px);
   width: 80%;
 }
-#about > .content-wrapper > .content {
+#about .content, #contact .content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#projects > .content-wrapper > .content {
+#projects .content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+#contact .content {
+  max-width: 40rem;
 }
 .content > *:not(:last-child) {
   margin-bottom: 2rem;
@@ -87,7 +90,7 @@ article {
 p,h3 {
   margin: 0;
 }
-p {
+#about p {
   max-width: 15rem;
 }
 /* Embedded resume */
@@ -98,6 +101,38 @@ iframe {
   width: 500px;
   height: 678px;
 } */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+form > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+textarea {
+  resize: none;
+  min-height: 150px;
+}
+input[type="text"], input[type="email"], textarea {
+  border: none;
+  background-color: #302f2e;
+  color: #ffffff;
+  padding: 10px 15px 10px 15px;
+}
+input:focus, textarea:focus {
+  outline: none;
+}
+::placeholder {
+  color: #c7c3c4;
+}
+input[type="submit"] {
+  align-self: center;
+  width: 30%;
+  background-color: #302f2e;
+  color: #c7c3c4;
+  border: 2px solid #c7c3c4;
+  padding: 10px 30px 10px 30px;
+}
 main {
   /* Hide horizontal scroll bar */
   height: calc(100vh + 17px);
@@ -189,6 +224,9 @@ main {
 }
 #progressbar > .background {
   background-image: url("img/progressbar.png");
+}
+#contact p {
+  width: 100%;
 }
 /* Desktop styles */
 @media only screen and (min-width: 769px) {
