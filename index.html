@@ -22,44 +22,78 @@
   <!--Content panels-->
   <main>
     <article id="about">
-      <div class="content">
-        <img class="circle" src="img/photo.jpg" alt="Picture of Jack Wohl">
-        <p>My name is Jack Wohl and I'm a software developer from Connecticut, specializing in full-stack development.</p>
-        <section class="social-links">
-          <a aria-label="LinkedIn" href="https://www.linkedin.com/in/jack-wohl-634b94198/" rel="noopener noreferrer">
-            <img alt="LinkedIn" src="img/linkedin.svg">
-          </a>
-          <a aria-label="Github" href="https://github.com/jnwjack" rel="noopener noreferrer">
-            <img alt="Github" src="img/github.svg">
-          </a>
-          <a aria-label="NPM" href="https://www.npmjs.com/~jnwjack" rel="noopener noreferrer">
-            <img alt="NPM" src="img/npm.svg">
-          </a>
-        </section>
-      </section>
+      <div class="content-wrapper">
+        <div class="content">
+          <img class="circle" src="img/photo.jpg" alt="Picture of Jack Wohl">
+          <p>My name is Jack Wohl and I'm a software developer from Connecticut, specializing in full-stack development.</p>
+          <section class="social-links">
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/jack-wohl-634b94198/" rel="noopener noreferrer">
+              <img alt="LinkedIn" src="img/linkedin.svg">
+            </a>
+            <a aria-label="Github" href="https://github.com/jnwjack" rel="noopener noreferrer">
+              <img alt="Github" src="img/github.svg">
+            </a>
+            <a aria-label="NPM" href="https://www.npmjs.com/~jnwjack" rel="noopener noreferrer">
+              <img alt="NPM" src="img/npm.svg">
+            </a>
+          </section>
+        </div>
+      </div>
     </article>
     <article id="projects">
-      <div class="content">
-        <div class="card" id="filebuy">
-          <div class="background"></div>
-        </div>
-        <div class="card" id="bookingengine">
-          <div class="background"></div>
-        </div>
-        <div class="card" id="portfolio">
-          <div class="background"></div>
+      <div class="content-wrapper">
+        <div class="content">
+          <div class="card" id="filebuy">
+            <div class="text">
+              <h3>File Buy</h3>
+              <p>A commission service for digital artists</p>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="card" id="bookingengine">
+            <div class="text">
+              <h3>Hotel Booking Engine</h3>
+              <p>A widget that guides hotel customers through the purchase of a hotel room. Made for Umi Digital</p>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="card" id="portfolio">
+            <div class="text">
+              <h3>Portfolio Website</h3>
+              <p>This website right here!</p>
+            </div>
+            <div class="background"></div>
+          </div>
+          <div class="card" id="progressbar">
+            <div class="text">
+              <h3>Progress Bar With Steps</h3>
+              <p>A simple NPM package for a animated, customizable progress bar with milestones</p>
+            </div>
+            <div class="background"></div>
+          </div>
         </div>
       </div>
     </article>
     <article id="resume">
-      <div class="content">
-        <object data="img/resume.pdf" type="application/pdf" height="100%" width="100%">
-          <iframe src="img/resume.pdf" title="Resume" height="100%" width="100%"></iframe>
-        </object>
+      <div class="content-wrapper">
+        <div class="content">
+          <object data="img/resume.pdf" type="application/pdf" height="100%" width="100%">
+            <iframe src="img/resume.pdf" title="Resume" height="100%" width="100%"></iframe>
+          </object>
+        </div>
       </div>
     </article>
     <article id="contact">
-
+      <div class="content-wrapper">
+        <div class="content">
+          <form>
+            <input type="text" placeholder="Name" required>
+            <input type="text" placeholder="Email" required>
+            <textarea type="text" placehoder="Your Message"></textarea>
+            <input type="submit">
+          </form>
+        </div>
+      </div>
     </article>
   </main>
 
