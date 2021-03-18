@@ -129,7 +129,7 @@ input:focus, textarea:focus {
   outline: none;
 }
 ::placeholder {
-  color: #6b6b6b;
+  color: #494949;
 }
 input[type="submit"] {
   align-self: center;
