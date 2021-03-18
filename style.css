@@ -1,5 +1,6 @@
 html {
   font-family: 'Rajdhani', sans-serif;
+  font-size: 16px;
   width: 100%;
 }
 body {
@@ -47,6 +48,9 @@ nav > a {
   height: 100%;
   line-height: 4rem;
 }
+.focus {
+  background-color: ghostwhite;
+}
 /* Content panel dimensions/scroll behavior */
 article {
   height: 100%;
@@ -57,8 +61,11 @@ article {
   overflow: hidden;
 }
 .content-wrapper {
-  height: 100%;
+  height: calc(100vh - 7rem);
   width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  /* padding-bottom: calc(4rem + 17px); */
   padding-right: 17px;
   overflow-y: scroll;
   display: flex;
@@ -66,8 +73,6 @@ article {
   justify-content: center;
 }
 .content {
-  padding-top: 4rem;
-  padding-bottom: calc(4rem + 17px);
   width: 80%;
 }
 #about .content, #contact .content {
@@ -115,22 +120,23 @@ textarea {
 }
 input[type="text"], input[type="email"], textarea {
   border: none;
-  background-color: #302f2e;
-  color: #ffffff;
+  background-color: #a0a0a0;
+  color: #333333;
   padding: 10px 15px 10px 15px;
 }
 input:focus, textarea:focus {
   outline: none;
 }
 ::placeholder {
-  color: #c7c3c4;
+  color: #6b6b6b;
 }
 input[type="submit"] {
   align-self: center;
   width: 30%;
-  background-color: #302f2e;
-  color: #c7c3c4;
-  border: 2px solid #c7c3c4;
+  min-width: 100px;
+  background-color: #a0a0a0;
+  color: #ffffff;
+  border: 2px solid #ffffff;
   padding: 10px 30px 10px 30px;
 }
 main {
@@ -156,22 +162,18 @@ main {
   color: #ffffff;
 }
 #projects {
-  background-color: #B1865D;
+  background-color: #B7A85C;
 }
 #resume {
-  background-color: #BEB997;
+  background-color: #43442B;
 }
 #contact {
-  background-color: #BFB68D;
+  background-color: #333333;
 }
 .circle {
-  background-color: darkred;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 10rem;
-}
-.focus {
-  background-color: ghostwhite;
+  width: 19rem;
+  height: 19rem;
+  border-radius: 9.5rem;
 }
 /* Project gallery */
 .card {
@@ -181,6 +183,9 @@ main {
   overflow: hidden;
   position: relative;
 }
+.card p {
+  width: 80%;
+}
 .card > .background {
   height: 100%;
   width: 100%;
@@ -189,24 +194,48 @@ main {
   background-size: cover;
   transition: all 0.3s ease-in-out;
 }
-.card > .text {
+/* Text initially invisible, appear on hover */
+.card > .text, .card > .card-link-wrapper {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  opacity: 0;
-  top: 0;
-  left: 0;
   position: absolute;
   z-index: 1;
   transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+.card > .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.card > .card-link-wrapper {
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.card .card-link {
+  /* Change pointer if it's a div */
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 5px 15px 5px 15px;
+  border: 2px solid #8312ed;
+  color: #8312ed;
+  background-color: ghostwhite;
 }
 .card:hover > .background {
   filter: blur(5px);
 }
 .card:hover > .text {
   top: 20%;
+  opacity: 1;
+}
+.card:hover > .card-link-wrapper {
+  bottom: 20%;
   opacity: 1;
 }
 #filebuy > .background {
@@ -227,6 +256,7 @@ main {
 }
 #contact p {
   width: 100%;
+  color: #ffffff;
 }
 /* Desktop styles */
 @media only screen and (min-width: 769px) {
