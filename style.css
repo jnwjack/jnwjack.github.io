@@ -95,6 +95,10 @@ article {
 p,h3 {
   margin: 0;
 }
+h4 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
 #about p {
   max-width: 20rem;
 }
@@ -259,6 +263,9 @@ main {
 }
 #progressbar > .background {
   background-image: url("img/progressbar.png");
+}
+#mindy > .background {
+  background-image: url("img/mindy.gif");
 }
 #contact p {
   width: 100%;

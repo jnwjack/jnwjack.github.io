@@ -11,6 +11,7 @@ const iO = new IntersectionObserver(entries => entries.forEach(entry => {
 panels = Array.from(document.querySelectorAll('article'))
 window.addEventListener('DOMContentLoaded', () => panels.map(a => iO.observe(a)));
 
+
 function insertBookingEngine() {
   // Add script to insert widget
   let script = document.createElement('script');
