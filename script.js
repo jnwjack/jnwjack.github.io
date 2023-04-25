@@ -16,7 +16,7 @@ function insertBookingEngine() {
   // Add script to insert widget
   let script = document.createElement('script');
   script.id = 'booking-engine-script';
-  script.src = 'https://umi-booking-engine.herokuapp.com/embed.js';
+  script.src = 'https://jnw-booking-engine.herokuapp.com/embed.js';
   document.body.appendChild(script);
 
   // Change button callback to function that removes widget
