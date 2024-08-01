@@ -259,10 +259,17 @@ main {
 #portfolio > .background {
   background-image: url("img/portfolio.png");
 }
+#coi > .background  {
+  background-image: url("img/coi.png");
+}
+#hellsempty > .background {
+  background-image: url("img/hellsempty.png");
+}
 /* Change text to white for portfolio preview */
-#portfolio > .text {
+#portfolio > .text, #coi > .text, #hellsempty > .text {
   color: #ffffff;
 }
+
 #progressbar > .background {
   background-image: url("img/progressbar.png");
 }
